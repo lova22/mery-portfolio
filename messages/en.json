@@ -1,0 +1,72 @@
+{
+  "Nav": {
+    "about": "About",
+    "research": "Research",
+    "leadership": "Leadership",
+    "blog": "Blog",
+    "contact": "Contact"
+  },
+  "Hero": {
+    "title": "Dr. Meryem Youssoufi",
+    "subtitle": "Professor of Sociology | Chess Leader | Researcher",
+    "cta_research": "Explore Research",
+    "cta_leadership": "Chess Leadership"
+  },
+  "About": {
+    "title": "The Organic Intellectual",
+    "paragraph1": "Dr. Meryem Youssoufi is a distinguished Professor of Sociology and Anthropology at University Ibn Zohr. Her academic journey is defined by a deep commitment to understanding the complexities of human society, particularly in the context of migration, citizenship, and social dynamics.",
+    "paragraph2": "She believes in the power of research not just as an academic exercise, but as a tool for real-world transformation. Her work bridges the gap between theoretical frameworks and practical applications, making significant contributions to both the academic community and civil society.",
+    "philosophy_title": "My Philosophy",
+    "philosophy_quote": "True scholarship lies in the ability to connect abstract theory with the lived experiences of individuals, fostering understanding and driving positive social change.",
+    "download_cv": "Download CV"
+  },
+  "Research": {
+    "title": "Academic Research & Publications",
+    "subtitle": "Exploring the frontiers of migration, citizenship, and social memory through rigorous academic inquiry.",
+    "collab_title": "International Collaboration",
+    "citer_project_name": "Project CITER",
+    "citer_full_title": "Europe and the Borders of Citizenship",
+    "citer_description": "Dr. Youssoufi serves as the principal coordinator for this major international research initiative. Bridging University Ibn Zohr and the Catholic University of the West (UCO) in France, the project critically examines the evolving definitions of citizenship, identity building, and minority rights in a globalized world.",
+    "citer_cta": "Learn More About CITER"
+  },
+  "Leadership": {
+    "title": "Chess Leadership",
+    "role_title": "President of the Souss-Massa Regional Chess League",
+    "role_description": "Making history as the first woman in Morocco to hold this prestigious position, Dr. Youssoufi brings a visionary approach to sports leadership. She combines strategic thinking with a passion for community development.",
+    "achievement_title": "Historic Victory",
+    "achievement_description": "Under her guidance, the 'Najah Souss' club secured the 2024-2025 Throne Cup, marking a significant milestone in regional sports excellence.",
+    "vision_title": "Chess & Social Integration",
+    "vision_quote": "Chess is more than a game; it is a universal language that bridges cultural divides and fosters intellectual growth.",
+    "vision_point1": "Empowering youth through strategic thinking",
+    "vision_point2": "Fostering social inclusion across diverse communities",
+    "vision_point3": "Promoting gender equality in sports leadership"
+  },
+  "Contact": {
+    "title": "Get in Touch",
+    "subtitle": "Interested in collaboration, research inquiries, or speaking engagements? Please reach out.",
+    "connect_title": "Connect",
+    "email_label": "Email",
+    "scholar_label": "Google Scholar",
+    "researchgate_label": "ResearchGate",
+    "form_name": "Your Name",
+    "form_name_placeholder": "John Doe",
+    "form_email": "Your Email",
+    "form_email_placeholder": "john@example.com",
+    "form_message": "Message",
+    "form_message_placeholder": "How can we collaborate?",
+    "form_submit": "Send Message",
+    "sending": "Sending...",
+    "sent_success": "Message sent successfully!",
+    "send_error": "Failed to send message. Please try again."
+  },
+  "Footer": {
+    "tagline": "Bridging the gap between academic theory and social leadership.",
+    "link_scholar": "Google Scholar",
+    "link_researchgate": "ResearchGate",
+    "rights": "All rights reserved."
+  },
+  "Blog": {
+    "title": "Latest Insights",
+    "read_more": "Read more"
+  }
+}

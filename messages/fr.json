@@ -1,0 +1,72 @@
+{
+  "Nav": {
+    "about": "À propos",
+    "research": "Recherche",
+    "leadership": "Leadership",
+    "blog": "Blog",
+    "contact": "Contact"
+  },
+  "Hero": {
+    "title": "Dr. Meryem Youssoufi",
+    "subtitle": "Professeure de Sociologie | Leader aux Échecs | Chercheuse",
+    "cta_research": "Explorer la Recherche",
+    "cta_leadership": "Leadership aux Échecs"
+  },
+  "About": {
+    "title": "L'Intellectuelle Organique",
+    "paragraph1": "Dr. Meryem Youssoufi est une Professeure distinguée de Sociologie et d'Anthropologie à l'Université Ibn Zohr. Son parcours académique se définit par un engagement profond à comprendre les complexités de la société humaine, notamment dans le contexte de la migration, de la citoyenneté et des dynamiques sociales.",
+    "paragraph2": "Elle croit au pouvoir de la recherche non pas seulement comme exercice académique, mais comme outil de transformation concrète. Son travail comble le fossé entre les cadres théoriques et les applications pratiques, apportant des contributions significatives tant à la communauté universitaire qu'à la société civile.",
+    "philosophy_title": "Ma Philosophie",
+    "philosophy_quote": "La véritable érudition réside dans la capacité à relier la théorie abstraite aux expériences vécues des individus, favorisant la compréhension et le changement social positif.",
+    "download_cv": "Télécharger le CV"
+  },
+  "Research": {
+    "title": "Recherche Académique & Publications",
+    "subtitle": "Explorer les frontières de la migration, de la citoyenneté et de la mémoire sociale par une enquête académique rigoureuse.",
+    "collab_title": "Collaboration Internationale",
+    "citer_project_name": "Projet CITER",
+    "citer_full_title": "L'Europe et les frontières de la citoyenneté",
+    "citer_description": "Dr. Youssoufi assure la coordination principale de cette initiative de recherche internationale majeure. Reliant l'Université Ibn Zohr et l'Université Catholique de l'Ouest (UCO) en France, le projet examine de manière critique les définitions évolutives de la citoyenneté, la construction identitaire et les droits des minorités dans un monde globalisé.",
+    "citer_cta": "En savoir plus sur CITER"
+  },
+  "Leadership": {
+    "title": "Leadership aux Échecs",
+    "role_title": "Présidente de la Ligue Régionale des Échecs de Souss-Massa",
+    "role_description": "Marquant l'histoire en tant que première femme au Maroc à occuper ce poste prestigieux, Dr. Youssoufi apporte une approche visionnaire au leadership sportif. Elle allie pensée stratégique et passion pour le développement communautaire.",
+    "achievement_title": "Victoire Historique",
+    "achievement_description": "Sous sa direction, le club 'Najah Souss' a remporté la Coupe du Trône 2024-2025, marquant une étape importante dans l'excellence sportive régionale.",
+    "vision_title": "Échecs & Intégration Sociale",
+    "vision_quote": "Les échecs sont plus qu'un jeu ; c'est un langage universel qui comble les fossés culturels et favorise la croissance intellectuelle.",
+    "vision_point1": "Autonomiser la jeunesse par la pensée stratégique",
+    "vision_point2": "Favoriser l'inclusion sociale à travers diverses communautés",
+    "vision_point3": "Promouvoir l'égalité des sexes dans le leadership sportif"
+  },
+  "Contact": {
+    "title": "Entrer en Contact",
+    "subtitle": "Intéressé par une collaboration, des demandes de recherche ou des conférences ? N'hésitez pas à nous contacter.",
+    "connect_title": "Connecter",
+    "email_label": "Email",
+    "scholar_label": "Google Scholar",
+    "researchgate_label": "ResearchGate",
+    "form_name": "Votre Nom",
+    "form_name_placeholder": "Jean Dupont",
+    "form_email": "Votre Email",
+    "form_email_placeholder": "jean@exemple.com",
+    "form_message": "Message",
+    "form_message_placeholder": "Comment pouvons-nous collaborer ?",
+    "form_submit": "Envoyer le Message",
+    "sending": "Envoi en cours...",
+    "sent_success": "Votre message a été envoyé avec succès !",
+    "send_error": "Échec de l'envoi du message. Veuillez réessayer."
+  },
+  "Footer": {
+    "tagline": "Combler le fossé entre la théorie académique et le leadership social.",
+    "link_scholar": "Google Scholar",
+    "link_researchgate": "ResearchGate",
+    "rights": "Tous droits réservés."
+  },
+  "Blog": {
+    "title": "Dernières Actualités",
+    "read_more": "Lire la suite"
+  }
+}
