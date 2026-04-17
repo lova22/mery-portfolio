@@ -2,6 +2,10 @@ import { useTranslations } from 'next-intl';
 import Navbar from '@/components/Navbar';
 import { Link } from '@/i18n/routing';
 
+export function generateStaticParams() {
+  return [{locale: 'en'}, {locale: 'fr'}, {locale: 'ar'}];
+}
+
 export default function BlogPage() {
   const t = useTranslations('Blog');
 

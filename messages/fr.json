@@ -2,9 +2,17 @@
   "Nav": {
     "about": "À propos",
     "research": "Recherche",
+    "students": "Encadrement",
+    "publications": "Publications",
+    "media": "Médias",
     "leadership": "Leadership",
     "blog": "Blog",
     "contact": "Contact"
+  },
+  "Media": {
+    "title": "Dans les Médias",
+    "subtitle": "Interviews, articles de presse et apparitions médiatiques mettant en lumière le travail académique et le leadership sportif du Dr Youssoufi.",
+    "view": "Voir"
   },
   "Hero": {
     "title": "Dr. Meryem Youssoufi",
@@ -68,5 +76,37 @@
   "Blog": {
     "title": "Dernières Actualités",
     "read_more": "Lire la suite"
+  },
+  "Students": {
+    "title": "Encadrement & Mentorat",
+    "subtitle": "Sélection de doctorants et d’étudiants de master encadrés, reflétant des axes de recherche en migration, citoyenneté et intégration sociale.",
+    "labels": {
+      "topic": "Sujet",
+      "years": "Années"
+    },
+    "status": {
+      "ongoing": "En cours",
+      "completed": "Terminé"
+    },
+    "view_details": "Voir les détails",
+    "back_to_list": "Retour aux étudiants",
+    "institution": "Institution",
+    "supervisor": "Directeur de thèse",
+    "abstract": "Résumé",
+    "keywords": "Mots-clés"
+  },
+  "Publications": {
+    "title": "Publications Sélectionnées",
+    "subtitle": "Travaux représentatifs sur la migration, la citoyenneté, la mémoire et l’intégration sociale.",
+    "actions": {
+      "view": "Voir",
+      "copy_bib": "Copier BibTeX"
+    },
+    "types": {
+      "article": "Article",
+      "chapter": "Chapitre",
+      "book": "Livre",
+      "proceedings": "Actes"
+    }
   }
 }

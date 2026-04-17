@@ -5,6 +5,8 @@ import {routing} from '@/i18n/routing';
 import "../globals.css";
 import { Geist, Geist_Mono, Tajawal } from "next/font/google";
 
+export const dynamic = 'force-static';
+
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
@@ -37,7 +39,7 @@ export default async function LocaleLayout({
  
   // Providing all messages to the client
   // side is the easiest way to get started
-  const messages = await getMessages();
+  const messages = await getMessages({locale});
   
   const dir = locale === 'ar' ? 'rtl' : 'ltr';
  

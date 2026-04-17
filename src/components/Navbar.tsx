@@ -15,21 +15,33 @@ export default function Navbar() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = React.useState(false);
 
   const switchLocale = (newLocale: string) => {
-    // If the locale is the same, just close the dropdown
     if (newLocale === locale) {
       setIsOpen(false);
       return;
     }
     
-    // Switch locale
-    router.replace(pathname, { locale: newLocale });
-    setIsOpen(false);
+    // For static export, we can't rely on router.replace with params for locale switching
+    // We need to manually construct the URL
+    // Get the current path without the locale prefix
+    const currentPath = window.location.pathname;
+    const pathSegments = currentPath.split('/').filter(Boolean);
+    
+    // Remove current locale if present (it should be the first segment)
+    if (['en', 'fr', 'ar'].includes(pathSegments[0])) {
+      pathSegments.shift();
+    }
+    
+    const newPath = `/${newLocale}/${pathSegments.join('/')}${window.location.hash}`;
+    window.location.href = newPath;
   };
 
   const navItems = [
     { label: t('about'), href: '/#about' },
     { label: t('research'), href: '/#research' },
+    { label: t('publications'), href: '/#publications' },
+    { label: t('students'), href: '/#students' },
     { label: t('leadership'), href: '/#leadership' },
+    { label: t('media'), href: '/#media' },
     { label: t('blog'), href: '/blog' },
     { label: t('contact'), href: '/#contact' },
   ];
