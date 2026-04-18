@@ -1,6 +1,6 @@
-import { useTranslations } from 'next-intl';
+import { useTranslations, useLocale } from 'next-intl';
 import Navbar from '@/components/Navbar';
-import { Link } from '@/i18n/routing';
+import NextLink from 'next/link';
 
 export function generateStaticParams() {
   return [{locale: 'en'}, {locale: 'fr'}, {locale: 'ar'}];
@@ -8,6 +8,7 @@ export function generateStaticParams() {
 
 export default function BlogPage() {
   const t = useTranslations('Blog');
+  const locale = useLocale();
 
   // Dummy data - in a real app this would come from a CMS or MDX files
   const posts = [
@@ -53,14 +54,14 @@ export default function BlogPage() {
               <p className="text-gray-600 mb-6 flex-grow leading-relaxed">
                 {post.excerpt}
               </p>
-              <Link 
-                href={`/blog/${post.slug}`} 
+              <NextLink 
+                href={`/${locale}/blog/${post.slug}`} 
                 className="text-navy-900 font-semibold hover:text-gold-500 inline-flex items-center transition-colors mt-auto"
               >
                 {t('read_more')} 
                 <span className="ml-2 rtl:hidden">&rarr;</span>
                 <span className="mr-2 ltr:hidden">&larr;</span>
-              </Link>
+              </NextLink>
             </div>
           ))}
         </div>

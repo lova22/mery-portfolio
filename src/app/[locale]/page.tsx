@@ -2,7 +2,6 @@ import Navbar from '@/components/Navbar';
 import Hero from '@/components/Hero';
 import About from '@/components/About';
 import Research from '@/components/Research';
-import Publications from '@/components/Publications';
 import MediaSection from '@/components/MediaSection';
 import Leadership from '@/components/Leadership';
 import Students from '@/components/Students';
@@ -22,7 +21,6 @@ export default function Home() {
       <Hero />
       <About />
       <Research />
-      <Publications />
       <MediaSection />
       <Students />
       <Leadership />

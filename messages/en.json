@@ -7,6 +7,7 @@
     "media": "Media",
     "leadership": "Leadership",
     "blog": "Blog",
+    "cours": "Courses",
     "contact": "Contact"
   },
   "Media": {
@@ -29,8 +30,8 @@
     "download_cv": "Download CV"
   },
   "Research": {
-    "title": "Academic Research & Publications",
-    "subtitle": "Exploring the frontiers of migration, citizenship, and social memory through rigorous academic inquiry.",
+    "title": "Academic Research & Projects",
+    "subtitle": "Exploring the frontiers of sociology through rigorous academic inquiry.",
     "collab_title": "International Collaboration",
     "citer_project_name": "Project CITER",
     "citer_full_title": "Europe and the Borders of Citizenship",
@@ -97,7 +98,7 @@
   },
   "Publications": {
     "title": "Selected Publications",
-    "subtitle": "Representative work across migration, citizenship, memory, and social integration.",
+    "subtitle": "A selection of authored and co-authored books, articles, and academic contributions.",
     "actions": {
       "view": "View",
       "copy_bib": "Copy BibTeX"
@@ -108,5 +109,11 @@
       "book": "Book",
       "proceedings": "Proceedings"
     }
+  },
+  "Cours": {
+    "title": "Courses",
+    "subtitle": "Course materials and resources shared with students.",
+    "download": "Download PDF",
+    "read": "Read PDF"
   }
 }

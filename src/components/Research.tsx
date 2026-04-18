@@ -26,6 +26,26 @@ const books = [
     image: "/images/book1.jpg",
     tags: ["Migration", "Social Exclusion", "Multiculturalism", "Citizenship"],
     color: "from-red-900 to-black"
+  },
+  {
+    id: 3,
+    title: "RECHERCHES SUR L'HISTOIRE DU MAROC",
+    subtitle: "",
+    editors: "Meryem Youssoufi et al.",
+    publisher: "Publications universitaires",
+    image: "/images/RECHERCHES SUR L'HISTOIRE DU MAROC.jpg",
+    tags: ["History", "Morocco", "Research"],
+    color: "from-blue-900 to-black"
+  },
+  {
+    id: 4,
+    title: "Migration, exil, diasporas au prisme de la rupture",
+    subtitle: "",
+    editors: "Meryem Youssoufi et al.",
+    publisher: "Presses universitaires de Rennes",
+    image: "/images/Migration, exil, diasporas au prisme de la rupture.jpg",
+    tags: ["Migration", "Exile", "Diaspora"],
+    color: "from-purple-900 to-black"
   }
 ];
 

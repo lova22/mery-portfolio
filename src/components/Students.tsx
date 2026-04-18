@@ -2,7 +2,7 @@
 
 import { useTranslations, useLocale } from 'next-intl';
 import { motion } from 'framer-motion';
-import { Link } from '@/i18n/routing';
+import NextLink from 'next/link';
 import { students } from '@/data/students';
 
 export default function Students() {
@@ -25,9 +25,9 @@ export default function Students() {
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {students.map((st, idx) => (
-            <Link 
+            <NextLink 
               key={st.id} 
-              href={`/students/${st.id}`}
+              href={`/${locale}/students/${st.id}`}
               className="block h-full"
             >
               <motion.div
@@ -61,7 +61,7 @@ export default function Students() {
                   {t('view_details') || 'View Details'} →
                 </div>
               </motion.div>
-            </Link>
+            </NextLink>
           ))}
         </div>
       </div>

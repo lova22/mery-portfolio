@@ -10,56 +10,27 @@ type Publication = {
   venue: string;
   type: 'Article' | 'Chapter' | 'Book' | 'Proceedings';
   link?: string;
+  image?: string;
 };
 
 const publications: Publication[] = [
   {
-    title: 'Citizenship at the Margins: Migration and Local Belonging',
-    authors: 'M. Youssoufi, G. Sebaux',
+    title: "RECHERCHES SUR L'HISTOIRE DU MAROC",
+    authors: 'Meryem Youssoufi et al.',
     year: '2024',
-    venue: 'Journal of Social Integration',
-    type: 'Article',
-    link: '#',
-  },
-  {
-    title: 'Borders of Memory: Representations of Migration in Urban Spaces',
-    authors: 'M. Youssoufi (ed.)',
-    year: '2023',
-    venue: 'Innsbruck University Press',
+    venue: 'Publications universitaires',
     type: 'Book',
-    link: '#',
+    link: 'https://magactuevents.com/parution-du-livre-recherches-sur-lhistoire-du-maroc-etat-des-lieux-et-perspectives/',
+    image: '/images/RECHERCHES SUR L\'HISTOIRE DU MAROC.jpg'
   },
   {
-    title: 'Gender, Sport Leadership, and Social Inclusion through Chess',
-    authors: 'M. Youssoufi, H. Zahra',
-    year: '2022',
-    venue: 'Proceedings of Social Dynamics',
-    type: 'Proceedings',
-    link: '#',
-  },
-  {
-    title: 'Europe and the Borders of Citizenship',
-    authors: 'G. Sebaux, M. Youssoufi (eds.)',
-    year: '2021',
-    venue: 'Faculty of Letters & Human Sciences, Ibn Zohr',
+    title: 'Migration, exil, diasporas au prisme de la rupture',
+    authors: 'Meryem Youssoufi et al.',
+    year: '2024',
+    venue: 'Presses universitaires de Rennes',
     type: 'Book',
-    link: '#',
-  },
-  {
-    title: 'Collective Memory and Second-Generation Identity',
-    authors: 'S. Ben Ali, M. Youssoufi',
-    year: '2021',
-    venue: 'Migration Studies Review',
-    type: 'Article',
-    link: '#',
-  },
-  {
-    title: 'Civic Participation among New Arrivals',
-    authors: 'R. El Fassi, M. Youssoufi',
-    year: '2020',
-    venue: 'Urban Citizenship Yearbook',
-    type: 'Chapter',
-    link: '#',
+    link: 'https://books.openedition.org/pur/309252',
+    image: '/images/Migration, exil, diasporas au prisme de la rupture.jpg'
   },
 ];
 
@@ -80,7 +51,7 @@ export default function Publications() {
           <p className="text-gray-600 max-w-2xl mx-auto">{t('subtitle')}</p>
         </motion.div>
 
-        <div className="space-y-4">
+        <div className="space-y-6">
           {publications.map((p, idx) => (
             <motion.div
               key={p.title + idx}
@@ -88,35 +59,56 @@ export default function Publications() {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.4, delay: idx * 0.05 }}
               viewport={{ once: true }}
-              className="bg-offwhite-50 border border-gray-200 rounded-xl p-5 hover:shadow-md transition-shadow"
+              className="bg-offwhite-50 border border-gray-200 rounded-xl overflow-hidden hover:shadow-md transition-shadow"
             >
-              <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-3">
-                <div>
-                  <h3 className="text-lg font-semibold text-navy-900">{p.title}</h3>
-                  <p className="text-sm text-gray-700 mt-1">
-                    <span className="font-medium">{p.authors}</span> · {p.year} · {p.venue} · {t(`types.${p.type.toLowerCase()}`)}
-                  </p>
-                </div>
-                <div className="flex items-center gap-2">
-                  {p.link && (
-                    <a
-                      href={p.link}
-                      className="inline-flex items-center px-3 py-1.5 text-sm rounded-md border border-gray-300 hover:border-navy-300 text-navy-800 hover:text-navy-900 transition-colors"
-                      target="_blank"
-                      rel="noreferrer"
-                    >
-                      {t('actions.view')}
-                    </a>
-                  )}
-                  <button
-                    className="inline-flex items-center px-3 py-1.5 text-sm rounded-md bg-navy-900 text-white hover:bg-navy-800 transition-colors"
-                    onClick={() => {
-                      const bib = `@misc{youssoufi_${p.year}_${idx},\n  title={${p.title}},\n  author={${p.authors}},\n  year={${p.year}},\n  howpublished={${p.venue}}\n}`;
-                      navigator.clipboard?.writeText(bib);
-                    }}
-                  >
-                    {t('actions.copy_bib')}
-                  </button>
+              <div className="flex flex-col md:flex-row gap-6 p-6">
+                {p.image && (
+                  <div className="flex-shrink-0 w-32 h-44 mx-auto md:mx-0">
+                    <img 
+                      src={p.image} 
+                      alt={p.title} 
+                      className="w-full h-full object-cover rounded-md shadow-sm border border-gray-200"
+                    />
+                  </div>
+                )}
+                <div className="flex flex-col flex-grow justify-center">
+                  <div className="flex flex-col md:flex-row md:items-start md:justify-between gap-4">
+                    <div>
+                      <h3 className="text-xl font-semibold text-navy-900 mb-2">{p.title}</h3>
+                      <p className="text-sm text-gray-700 mb-3">
+                        <span className="font-medium text-gray-900">{p.authors}</span>
+                      </p>
+                      <div className="flex flex-wrap items-center gap-2 text-sm text-gray-600">
+                        <span className="bg-gray-100 px-2 py-1 rounded text-xs font-medium">{t(`types.${p.type.toLowerCase()}`)}</span>
+                        <span>•</span>
+                        <span>{p.year}</span>
+                        <span>•</span>
+                        <span>{p.venue}</span>
+                      </div>
+                    </div>
+                    
+                    <div className="flex flex-wrap items-center gap-2 mt-4 md:mt-0 md:justify-end">
+                      {p.link && p.link !== '#' && (
+                        <a
+                          href={p.link}
+                          className="inline-flex items-center px-4 py-2 text-sm rounded-md border border-gray-300 hover:border-navy-300 text-navy-800 hover:text-navy-900 hover:bg-gray-50 transition-colors font-medium"
+                          target="_blank"
+                          rel="noreferrer"
+                        >
+                          {t('actions.view')}
+                        </a>
+                      )}
+                      <button
+                        className="inline-flex items-center px-4 py-2 text-sm rounded-md bg-navy-900 text-white hover:bg-navy-800 transition-colors font-medium"
+                        onClick={() => {
+                          const bib = `@misc{youssoufi_${p.year}_${idx},\n  title={${p.title}},\n  author={${p.authors}},\n  year={${p.year}},\n  howpublished={${p.venue}}\n}`;
+                          navigator.clipboard?.writeText(bib);
+                        }}
+                      >
+                        {t('actions.copy_bib')}
+                      </button>
+                    </div>
+                  </div>
                 </div>
               </div>
             </motion.div>

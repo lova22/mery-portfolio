@@ -46,7 +46,7 @@ export default async function LocaleLayout({
   return (
     <html lang={locale} dir={dir} suppressHydrationWarning>
       <body className={`${geistSans.variable} ${geistMono.variable} ${tajawal.variable} ${locale === 'ar' ? 'font-tajawal' : 'font-sans'} antialiased`}>
-        <NextIntlClientProvider messages={messages}>
+        <NextIntlClientProvider messages={messages} locale={locale}>
           {children}
         </NextIntlClientProvider>
       </body>

@@ -7,6 +7,7 @@
     "media": "Médias",
     "leadership": "Leadership",
     "blog": "Blog",
+    "cours": "Cours",
     "contact": "Contact"
   },
   "Media": {
@@ -29,8 +30,8 @@
     "download_cv": "Télécharger le CV"
   },
   "Research": {
-    "title": "Recherche Académique & Publications",
-    "subtitle": "Explorer les frontières de la migration, de la citoyenneté et de la mémoire sociale par une enquête académique rigoureuse.",
+    "title": "Recherche Académique & Projets",
+    "subtitle": "Explorer les frontières de la sociologie par une enquête académique rigoureuse.",
     "collab_title": "Collaboration Internationale",
     "citer_project_name": "Projet CITER",
     "citer_full_title": "L'Europe et les frontières de la citoyenneté",
@@ -97,7 +98,7 @@
   },
   "Publications": {
     "title": "Publications Sélectionnées",
-    "subtitle": "Travaux représentatifs sur la migration, la citoyenneté, la mémoire et l’intégration sociale.",
+    "subtitle": "Une sélection de livres, articles et contributions académiques.",
     "actions": {
       "view": "Voir",
       "copy_bib": "Copier BibTeX"
@@ -108,5 +109,11 @@
       "book": "Livre",
       "proceedings": "Actes"
     }
+  },
+  "Cours": {
+    "title": "Cours",
+    "subtitle": "Supports de cours et ressources partagés avec les étudiants.",
+    "download": "Télécharger le PDF",
+    "read": "Lire le PDF"
   }
 }
